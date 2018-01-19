@@ -4,9 +4,8 @@ public class Solution {
 
 	public static void main(String[] args) {
 
-		int number = 6;
+		int number = 20;
 		System.out.println(solution(number));
-
 	}
 
 	public static int solution(int N) {
@@ -27,19 +26,14 @@ public class Solution {
 					} else if (binaryArr[j] == '1') {
 						maxRound = counter;
 						break;
-
-					}
-
-					else {
+					} else {
 						break;
 					}
-
 				}
 				if (max < maxRound) {
 					max = maxRound;
 				}
 			}
-
 		}
 		return max;
 	}
